@@ -3,7 +3,7 @@
 ## Snap daemon side
 
 ### API v2 routes
-All API v2 routes are available in file `./mgmt/rest/v2/api.go`. This file contains API method call routes depending on the HTTP request. There is OpenAPI ([www.openapis.org](https://www.openapis.org/)) metadata above each route, for generating OpenAPI Specification file used to autogenerate client.
+All API v2 routes are available in file `./mgmt/rest/v2/api.go`. This file contains API method call routes depending on the HTTP request. There is Swagger ([swagger.io](http://swagger.io/)) metadata above each route, for generating OpenAPI ([www.openapis.org](https://www.openapis.org/)) Specification file used to autogenerate client.
 
 ### API v2 route Swagger template:
 ```go
