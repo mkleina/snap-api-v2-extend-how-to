@@ -1,6 +1,6 @@
 # Snap - How to extend API v2
 
-## Snap daemon side
+## [Snap daemon side](https://github.com/intelsdi-x/snap)
 
 ### API v2 routes
 All API v2 routes are available in file `./mgmt/rest/v2/api.go`. This file contains API method call routes depending on the HTTP request. There is Swagger ([swagger.io](http://swagger.io/)) metadata above each route, for generating OpenAPI ([www.openapis.org](https://www.openapis.org/)) Specification file used to autogenerate client.
@@ -147,7 +147,11 @@ If you see this message, everything is OK:
 The swagger spec at "/home/user/workspace/go/src/github.com/intelsdi-x/snap/scripts/../swagger.json" is valid against swagger specification 2.0
 ```
 
-## Snap client side
+#### What is API specification file?
+
+API specification file for Snap is called `swagger.json` and can be found in root of snap repository. It contains JSON-formatted data about all structures needed for client to communicate. It is detailed Snap protocol specification in machine-readable format.
+
+## [Snap client side](https://github.com/intelsdi-x/snap-client-go)
 
 You need to have your Snap daemon API changes merged to official repo before making changes in client. Then `make` command will update client code automatically to latest API changes.
 
@@ -157,7 +161,7 @@ If you want to start working on client code before merging Snap daemon changes:
 - Replace `./vendor/github.com/intelsdi-x/snap/swagger.json` with new one
 - Update client code with `make swagger`
 
-## Snap CLI side
+## [Snap CLI side](https://github.com/intelsdi-x/snap-cli)
 
 You need to have your updated Snap client merged to official repo before making changes in CLI.
 
